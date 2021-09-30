@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">    <link rel="shortcut icon" href="images/digital_clock.png" type="image/x-icon">
+    <script src="js/stopwatch.js" async></script>
+    <title>Stopwatch</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Clock</a></li>
+            <li><a href="stopwatch.html">Stopwatch</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="stopwatch-container">
+            <div class="stopwatch-content">
+                <div class="stopwatch-circle">
+                    <div class="stopwatch-time">
+                        <span class="watch-time" id="watchMinutes">00</span>
+                        <span class="watch-colon">:</span>
+                        <span class="watch-time" id="watchSeconds">00</span>
+                        <span class="watch-colon">:</span>
+                        <span class="watch-time" id="watchMilliseconds">00</span>
+                    </div>
+
+                    <div class="stopwatch-lap-time hidden" id="lapTime">
+                        <span class="lap-time" id="lapMinutes">00</span>
+                        <span class="lap-colon">:</span>
+                        <span class="lap-time" id="lapSeconds">00</span>
+                        <span class="lap-colon">:</span>
+                        <span class="lap-time" id="lapMilliseconds">00</span>
+                    </div>
+                </div>
+
+                <div class="stopwatch-button">
+                    <button class="button" id="reset">Reset</button>
+                    <button class="button" id="start">Start</button>
+                    <button class="button" id="lap">Lap</button>
+                </div>
+            </div>
+            
+            <div class="lap-time-data" id="lapTimeData" hidden>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lap</th>
+                            <th>Lap Times</th>
+                            <th>Overall Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lapData"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/digital_clock.png" type="image/x-icon">
+    <script src="js/clock.js" async></script>
+    <title>Digital Clock</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="clock-tabs">
+            <li><a href="index.html">Clock</a></li>
+            <li><a href="stopwatch.html">Stopwatch</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="date-time-container">
+            <div class="date-content">
+                <div class="date" id="day"></div>
+                <div class="date-comma">&#44;</div>
+                <div class="date" id="month"></div>
+                <div class="date" id="dayMonth"></div>
+                <div class="date-comma">&#44;</div>
+                <div class="date" id="year"></div>
+            </div>
+
+            <div class="time-content">
+                <div class="clock-time" id="hours"></div>
+                <div class="clock-colon">&#58;</div>
+                <div class="clock-time" id="minutes"></div>
+                <div class="clock-colon">&#58;</div>
+                <div class="clock-time" id="seconds"></div>
+                <div class="clock-time-period" id="timePeriod">AM</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
